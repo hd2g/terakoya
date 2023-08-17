@@ -11,7 +11,8 @@
                  [cljsjs/react "17.0.2-0"]
                  [cljsjs/react-dom "17.0.2-0"]
                  [reagent "1.1.1" ]
-                 [clj-commons/cljss "1.6.4"]]
+                 [clj-commons/cljss "1.6.4"]
+                 [prismatic/schema "1.4.1"]]
 
   :source-paths ["src"]
 

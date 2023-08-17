@@ -4,8 +4,7 @@
 (defstyled styled-header :header
   {:display "flex"
    :flex-direction "row"
-   :justify-content "center"
-   :margin "1rem"})
+   :justify-content "center"})
 
 (defn header [& children]
   [styled-header

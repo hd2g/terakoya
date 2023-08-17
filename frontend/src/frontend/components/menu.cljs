@@ -12,12 +12,12 @@
   {:cursor "pointer"})
 
 (defn menu-icon [{:keys [on-click]}]
-  [:div {:on-click on-click :css [pointerd]}
+  [:div {:on-click on-click :class (pointerd)}
    [:img {:src "https://icongr.am/entypo/menu.svg"
           :alt "menu"}]])
 
 (defn close-button-icon [props]
-  [:div (assoc props :css [pointerd])
+  [:div (assoc props :class (pointerd))
    [:img {:src "https://icongr.am/material/close.svg"
           :alt "close"}]])
 

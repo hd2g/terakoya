@@ -5,7 +5,9 @@
             [frontend.components.title :refer [title]]))
 
 (defstyled screen :div
-  {})
+  {:margin 0
+   :padding 0
+   :width "100%"})
 
 (defn sign-out []
   (js/window.alert "ok"))
@@ -17,6 +19,10 @@
    :margin-left "auto"
    :margin-bottom "auto"})
 
+(defstyled main-area :main
+  {:margin-top "1rem"
+   :margin-bottom "1rem"})
+
 (defn layout
   ([] (layout {} nil))
   ([children] (layout {} children))
@@ -26,7 +32,7 @@
      [:div
       [title
        [:a {:href "/" :style {:text-decoration "none" :color "black"}}
-        "Title"]]]
+        "Terakoya"]]]
      [menu-area
        [menu
         [{:name "Problems"
@@ -36,4 +42,5 @@
     ;; [header]
     ;; [contents]
     ;; [footer]
-    children]))
+    [main-area
+     children]]))
